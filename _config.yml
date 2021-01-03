@@ -24,13 +24,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Max的博客
-email: z_max_y@163.com
-author: StreakingMan
-copyright: Copyright © 2020-2021
+title: Your awesome title
+email: your-email@domain.com
+author: GitHub User
+copyright: Copyright © 1970-2010
 description: >- # this means to ignore newlines until "baseurl:"
-  裸奔狂甩丁丁的博客，记录各种花里胡哨的东西（前端、游戏设计、创意、随笔）。
-  StreakingMan-Max-s github page blog about all kinds of awesome things, includes fed coding, game design, idea and so on.
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -51,10 +52,10 @@ yat:
 # google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
-sitemap: true
+# sitemap: false
 
 # If you want to change site language, you can set lang option
-lang: "zh-CN"  # default lang is en
+# lang: "en"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -115,8 +116,8 @@ lang: "zh-CN"  # default lang is en
 # Page default value
 # defaults:
 #   home:
-#     heading: "StreakingMan"
-#     subheading: "种一棵树，最好的时间是十年前，其次是现在"
+#     heading: "Your awesome heading"
+#     subheading: "Your awesome subheading"
 #     banner: "Your image url"
 
 # Pagination setting
@@ -127,12 +128,12 @@ lang: "zh-CN"  # default lang is en
 #   shortname: "Your Disqus username"
 
 # Gitment comments
-gitment:
-  username: "StreakingMan"
-  repo: "streakingman.github.io"
-  client_id: "0f6ccb61614db36eb8e3"
-  client_secret: "e4e8de79bceda034bb3528aa49ce5788c1dc5926"
-  redirect_uri: "https://streakingman.github.io/"   # If you use a custom domain name
+# gitment:
+#   username: "Your GitHub username"
+#   repo: "The repo to store comments"
+#   client_id: "Your client ID"
+#   client_secret: "Your client secret"
+#   redirect_uri: "Your redirect url"   # If you use a custom domain name
 
 # Build settings
 # highlighter: none
