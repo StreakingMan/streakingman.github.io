@@ -113,11 +113,11 @@ lang: "zh-CN"  # default lang is en
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "StreakingMan"
-#     subheading: "种一棵树，最好的时间是十年前，其次是现在"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "StreakingMan"
+    subheading: "种一棵树，最好的时间是十年前，其次是现在"
+    banner: "Your image url"
 
 # Pagination setting
 # paginate: 5
