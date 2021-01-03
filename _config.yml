@@ -24,14 +24,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
-copyright: Copyright © 1970-2010
+title: Max的博客
+email: z_max_y@163.com
+author: StreakingMan
+copyright: Copyright © 2020-2021
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  裸奔狂甩丁丁的博客，记录各种花里胡哨的东西（前端、游戏设计、创意、随笔）。
+  StreakingMan:Max-s github page blog about all kinds of awesome things, includes fed coding, game design, idea and so on.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -49,43 +48,39 @@ yat:
 # header_transparent: true
 
 # Google analytics
-# google_analytics: [Tracking ID]
+google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
-# sitemap: false
+sitemap: true
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "zh-CN"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
-# translate_langs:
-#   - lang: en
-#     text: English
-#
-#   - lang: fr
-#     img: https://www.countryflags.io/fr/flat/64.png
-#     text: Franch
-#
-#   - lang: zh-CN
-#     img: https://www.countryflags.io/cn/flat/64.png
-#     text: Chinese(Simple)
-#
-#   - lang: zh-TW
-#     img: https://www.countryflags.io/tw/flat/64.png
-#     text: Chinese(Traditional)
-#
-#   - lang: ja
-#     img: https://www.countryflags.io/jp/flat/64.png
-#     text: Japan
-#
-#   - lang: ko
-#     img: https://www.countryflags.io/kr/flat/64.png
-#     text: Korean
-#
-#   - lang: ru
-#     img: https://www.countryflags.io/ru/flat/64.png
-#     text: Russia
+- lang: zh-CN
+  img: https://www.countryflags.io/cn/flat/64.png
+  text: 简体中文
+
+- lang: en
+  img: https://www.countryflags.io/us/flat/64.png
+  text: English
+
+- lang: fr
+  img: https://www.countryflags.io/fr/flat/64.png
+  text: Franch
+
+- lang: ja
+  img: https://www.countryflags.io/jp/flat/64.png
+  text: Japan
+
+- lang: ko
+  img: https://www.countryflags.io/kr/flat/64.png
+  text: Korean
+
+- lang: ru
+  img: https://www.countryflags.io/ru/flat/64.png
+  text: Russia
 
 # You can choose a theme color
 # Default theme colors as below:
@@ -115,10 +110,10 @@ yat:
 
 # Page default value
 # defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+home:
+  heading: "StreakingMan"
+  subheading: "种一棵树，最好的时间是十年前，其次是现在"
+  banner: "Your image url"
 
 # Pagination setting
 # paginate: 5
@@ -128,12 +123,12 @@ yat:
 #   shortname: "Your Disqus username"
 
 # Gitment comments
-# gitment:
-#   username: "Your GitHub username"
-#   repo: "The repo to store comments"
-#   client_id: "Your client ID"
-#   client_secret: "Your client secret"
-#   redirect_uri: "Your redirect url"   # If you use a custom domain name
+gitment:
+  username: "StreakingMan"
+  repo: "streakingman.github.io"
+  client_id: "0f6ccb61614db36eb8e3"
+  client_secret: "e4e8de79bceda034bb3528aa49ce5788c1dc5926"
+  redirect_uri: "https://streakingman.github.io/"   # If you use a custom domain name
 
 # Build settings
 # highlighter: none
