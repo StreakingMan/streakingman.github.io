@@ -41,7 +41,7 @@ tags: 前端 vue element-ui table
 
 所以最后只需要根据row-id主动调用toggleTreeExpansion方法即可（箭头未发现配置可隐藏，只能先强制`display: none`隐藏掉）
 
-{% highlight vue html javascript linenos %}
+```vue
 
 <isc-table-column prop="version" label="固件版本">
   <div class="flex-row" slot-scope="scope">
@@ -58,9 +58,11 @@ tags: 前端 vue element-ui table
 
 loadVersionFirmware(id) {
   this.$refs.table.store.toggleTreeExpansion(id);
-},
+}
 
-{% endhighlight %}
+```
+
+
 
 ![](../assets/images/posts/element-ui-table-custom-expand-demo.gif)
 

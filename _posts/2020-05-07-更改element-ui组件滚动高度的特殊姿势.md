@@ -35,11 +35,13 @@ elment-ui中，滚动条是额外实现的，带了滚动条的组件都会引�
 
 直接取到scrollbar的ref进行操作
 
-{% highlight javascript linenos %}
+```vue
+
 scrollTopAdd() {
     this.$refs.select.$refs.scrollbar.wrap.scrollTop++;
-},
-{% endhighlight %}
+}
+
+```
 
 ![](../assets/images/posts/element-ui-ref-scrollbar-wrap-test.gif "控制scrollbar.wrap.scrollTop")
 
