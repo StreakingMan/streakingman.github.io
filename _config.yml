@@ -92,7 +92,7 @@ translate_langs:
 # theme_color: snowwhite
 #
 # Custom color as below:
-theme_color: "#f99621"
+# theme_color: "#882250"
 
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
