@@ -11,7 +11,7 @@ tags: 前端 vue element-ui table
 
 最近开发中遇到这样一个场景：固件列表对同一型号，但不同版本的固件需要支持展开折叠操作
 
-![](/assets/images/posts/element-ui-ref-scrollbar-wrap-test.gif "自定义表格展开折叠交互")
+![](/assets/images/posts/table-custom-expand.png "自定义表格展开折叠交互")
 
 实际上我们只需要将表格展开折叠自定义即可（将箭头展开替换为文字按钮触发）
 
@@ -42,7 +42,7 @@ tags: 前端 vue element-ui table
 所以最后只需要根据row-id主动调用toggleTreeExpansion方法即可（箭头未发现配置可隐藏，只能先强制`display: none`隐藏掉）
 
 ```vue
-<isc-table-column prop="version" label="固件版本">
+<el-table-column prop="version" label="固件版本">
   <div class="flex-row" slot-scope="scope">
     <div style="width: 50px;" class="text-ellipsis mr-2">
       {{ scope.row.version }}
@@ -53,7 +53,7 @@ tags: 前端 vue element-ui table
       </isc-button>
     </template>
   </div>
-</isc-table-column>
+</el-table-column>
 
 loadVersionFirmware(id) {
   this.$refs.table.store.toggleTreeExpansion(id);
