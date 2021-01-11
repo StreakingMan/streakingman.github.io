@@ -41,18 +41,12 @@
             <h2 class="page-banner-subheading">
               {{ subheading | default: page.subtitle | escape }}
             </h2>
-            <h3>
-              <span id="busuanzi_container_site_pv">
-                本站总访问量
-                <span id="busuanzi_value_site_pv"></span>
-                次
-              </span>
-              <span id="busuanzi_container_site_uv">
-                本站访客数
-                <span id="busuanzi_value_site_uv"></span>
-                人次
-              </span>
-            </h3>
+            <h2 class="page-banner-subheading">
+              <i class="fa fa-eye"></i>
+              <span id="busuanzi_value_site_pv"></span>
+              <i class="fa fa-user-plus"></i>
+              <span id="busuanzi_value_site_uv"></span>
+            </h2>
           </div>
 
         {%- endif -%}
