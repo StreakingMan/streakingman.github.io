@@ -129,7 +129,7 @@ gitment:
   repo: "streakingman.github.io"
   client_id: "0f6ccb61614db36eb8e3"
   client_secret: "e4e8de79bceda034bb3528aa49ce5788c1dc5926"
-  redirect_uri: "https://streakingman.github.io/"   # If you use a custom domain name
+  redirect_uri: "http://blog.streakingman.com/"   # If you use a custom domain name
 
 # Build settings
 # highlighter: none
