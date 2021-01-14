@@ -9,8 +9,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
 <script>
   function setRandomBgImage(selector, seed) {
-    var pattern = GeoPattern.generate(seed);
-    var element = document.querySelector(selector)
+    var pattern = GeoPattern.generate(seed || Math.random() + '');
+    var element = document.querySelector(selector);
     if (element) {
       element.style.backgroundImage = pattern.toDataUrl();
     }
