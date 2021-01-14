@@ -24,12 +24,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Max的博客
+title: StreakingMan的博客
 email: z_max_y@163.com
 author: StreakingMan
 copyright: Copyright © 2020-2021
 description: >- # this means to ignore newlines until "baseurl:"
-  裸奔狂甩丁丁的博客，记录各种花里胡哨的东西（前端、游戏设计、创意、随笔）。
+  裸奔狂甩丁丁StreakingMan的博客，记录各种花里胡哨的东西（前端、游戏设计、创意、随笔）。
   StreakingMan-Max-s github page blog about all kinds of awesome things, includes fed coding, game design, idea and so on.
 
 baseurl: "" # the subpath of your site, e.g. /blog
