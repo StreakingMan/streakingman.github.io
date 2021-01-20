@@ -11,11 +11,11 @@ tags: 前端 vue element-ui table
 
 最近开发中遇到这样一个场景：固件列表对同一型号，但不同版本的固件需要支持展开折叠操作
 
-![](/assets/images/posts/table-custom-expand.png "自定义表格展开折叠交互")
+![](http://media-bed.streakingman.com/blog-img/table-custom-expand.png "自定义表格展开折叠交互")
 
 实际上我们只需要将表格展开折叠自定义即可（将箭头展开替换为文字按钮触发）
 
-![](/assets/images/posts/element-ui-table-tree-lazy-doc.png "官方文档")
+![](http://media-bed.streakingman.com/blog-img/element-ui-table-tree-lazy-doc.png)
 
 但很可惜，文档中没有有替换这个默认箭头的方法
 
@@ -25,17 +25,17 @@ tags: 前端 vue element-ui table
 
 查看源码的过程中，发现table还有个未暴露的tableStore，很明显节点的状态是通过这个来管理的
 
-![](/assets/images/posts/element-ui-source-code-table-store.png)
+![](http://media-bed.streakingman.com/blog-img/element-ui-source-code-table-store.png)
 
 点进源码，发现除了文档中的方法外，还有两个未暴露的方法
 
-![](/assets/images/posts/element-ui-source-code-table-store-methods.png)
+![](http://media-bed.streakingman.com/blog-img/element-ui-source-code-table-store-methods.png)
 
 表格数据和懒加载的表格数据都是树状的，`toggleTreeExpansion`方法用过`rowkey`即可切换状态，`loadData`则可以主动调用`lazy`方法
 
 查看table-column源码，也能发现折叠箭头调用的是这两个方法
 
-![](/assets/images/posts/element-ui-source-code-table-column-expand.png)
+![](http://media-bed.streakingman.com/blog-img/element-ui-source-code-table-column-expand.png)
 
 ### 解决方案
 
@@ -62,7 +62,7 @@ loadVersionFirmware(id) {
 
 
 
-![](/assets/images/posts/element-ui-table-custom-expand-demo.gif)
+![](http://media-bed.streakingman.com/blog-img/element-ui-table-custom-expand-demo.gif)
 
 ### 总结
 
