@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## Jekyll & Yat Theme Github Pages
 
-You can use the [editor on GitHub](https://github.com/MaxYYYYY/max.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a github pages project powered by [jekyll](https://jekyllrb.com/) and  [yat theme](https://github.com/jeffreytse/jekyll-theme-yat)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+这是我的jekyll博客 线上地址： ["StreakingMan's Blog"](https://blog.streakingman.com/) 
 
-### Markdown
+改造子自为  [yat theme](https://github.com/jeffreytse/jekyll-theme-yat) 的  [jekyll](https://jekyllrb.com/)  主题，除博客常见功能外，还集成了明暗风格切换、随机首页图、gitment、[不蒜子](https://busuanzi.ibruce.info/)计数器等
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![image-20210204235419071](https://i.loli.net/2021/02/04/3qDnA1Oi29S5UpN.png)
 
-```markdown
-Syntax highlighted code block
+![image-20210204235041059](https://i.loli.net/2021/02/04/OS6WHvglyK8Louz.png)
 
-# Header 1
-## Header 2
-### Header 3
+![image-20210204234336218](https://i.loli.net/2021/02/04/si39apVH7ojP16J.png)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+种一棵树，最好的时间时十年前，其次是现在
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MaxYYYYY/max.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
