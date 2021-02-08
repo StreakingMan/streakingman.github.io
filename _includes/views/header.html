@@ -42,11 +42,11 @@
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
-            <a href="{{ site.links.github }}" target="_blank">
+            <a class="page-link" href="{{ site.links.github }}" target="_blank">
               <i class="fa fa-github-alt" style="font-size: 24px"></i>
             </a>
-            <a href="{{ site.links.bilibili }}" target="_blank">
-              <img src="https://media-bed.streakingman.com/bilibili-logo.png" alt="bilibili"/>
+            <a class="page-link" href="{{ site.links.bilibili }}" target="_blank">
+              <img src="https://media-bed.streakingman.com/bilibili-logo.png" alt="bilibili" style="vertical-align: text-bottom"/>
             </a>
           </div>
         </nav>
