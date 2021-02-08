@@ -3,11 +3,16 @@
 
   <div class="wrapper">
     <div class="site-footer-inner">
-      <div>{{ site.copyright }} {% if site.author %}@{{ site.author | escape }}{% endif %}</div>
+      <div>
+        {{ site.copyright }} {% if site.author %}@{{ site.author | escape }}{% endif %}
+        <a href="{{ site.github }}">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
       <div>
         本站总访问量<span id="busuanzi_value_site_pv"></span>次，
         访客数<span id="busuanzi_value_site_uv"></span>人次，
-        由<a href="//busuanzi.ibruce.info/">不蒜子</a>驱动。
+        统计由<a href="//busuanzi.ibruce.info/">不蒜子</a>驱动。
       </div>
       <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
       generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
