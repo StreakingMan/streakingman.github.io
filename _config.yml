@@ -36,6 +36,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "/assets/favicon.ico" # the favicon for your site
 
+# Links
+links:
+  github: "https://github.com/StreakingMan"
+  bilibili: "https://space.bilibili.com/18424564"
+
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 yat:
