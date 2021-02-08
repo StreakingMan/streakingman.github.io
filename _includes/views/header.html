@@ -42,6 +42,9 @@
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
+            <a href="{{ site.links.github }}">
+              <i class="fa fa-github"></i>
+            </a>
           </div>
         </nav>
       {%- endif -%}
