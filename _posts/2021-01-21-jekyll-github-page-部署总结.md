@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Jekyll Github Page部署总结
-subheading: 养成写博客的习惯
 author: Max
 categories: 前端
 tags: 前端 jekyll github-page 静态网站 心得随笔
@@ -23,7 +22,7 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 
 ### 选择jekyll主题：[Yat](https://jeffreytse.github.io/jekyll-theme-yat/)
 
-![image-20210331230139478](https://i.loli.net/2021/03/31/nlC3YMjiG42c9mz.png)
+![image-20210407191206566](https://media-bed.streakingman.com/image-20210407191206566.png)
 
 主题方面，我并没有使用建立github-page仓库时推荐的jeykell主题，搜罗了一番，最终找到了这个名为漂亮的Yat的主题（[点击访问仓库](https://github.com/jeffreytse/jekyll-theme-yat)）。
 
@@ -69,7 +68,7 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 </div>
 ```
 
-![image-20210401000643680](https://i.loli.net/2021/04/01/YHbtWLRlq3Drugw.png)
+![image-20210407191137885](https://media-bed.streakingman.com/image-20210407191137885.png)
 
 #### geopattern
 
@@ -118,9 +117,7 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 </body>
 ```
 
-![image-20210401001149382](https://i.loli.net/2021/04/01/fvpnKoXQhlr2s63.png)
-
-![image-20210401001223307](https://i.loli.net/2021/04/01/XjIkfg6zVqHNJaO.png)
+![image-20210407190948710](https://media-bed.streakingman.com/image-20210407190948710.png)
 
 #### 不蒜子访问量统计
 
@@ -138,9 +135,9 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 </div>
 ```
 
-![image-20210401001302752](https://i.loli.net/2021/04/01/S5PIyFWHk8MvfLG.png)
+![image-20210407191113911](https://media-bed.streakingman.com/image-20210407191113911.png)
 
-### 总结
+### 写在最后
 
 不应当为了写博客而写博客，博客的灵魂是内容，其余的都是点缀，不断思考，不断沉淀，不要像csdn的博客一样疯狂注水复制粘贴。
 
