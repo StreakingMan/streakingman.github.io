@@ -13,12 +13,12 @@ tags: ES6 心得随笔
 * 修改某些操作默认行为（实现了对语言自身的操作，某种程度上使得ECMAScript具备“反射”能力，属于“元编程”范畴）
   
 * 通过Proxy构造函数生成实例
-  ```ecmascript 6
+  ```javascript
   const proxy = new Proxy(target, handler);    
   ```
   
 * 仅可对Object做代理，不支持基础类型
-  ```ecmascript 6
+  ```javascript
   const proxy = new Proxy(0, {})
   // Uncaught TypeError: Cannot create proxy with a non-object as target or handler
   ```
@@ -53,7 +53,7 @@ tags: ES6 心得随笔
   
 * revocable方法
   返回一个可取消的Proxy实例，通过调用该实例的revoke方法回收，回收后无法访问，适合一些受保护变量的临时访问场景
-  ```ecmascript 6
+  ```javascript
   let {proxy, revoke} = Proxy.revocable(target, handler);
   proxy.foo = 123;
   proxy.foo // 123
