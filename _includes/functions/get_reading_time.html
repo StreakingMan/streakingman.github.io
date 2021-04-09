@@ -5,7 +5,7 @@
 {% if include.params.speed %}
   {% assign speed = include.params.speed %}
 {% else %}
-  {% assign speed = 400 %}
+  {% assign speed = 300 %}
 {% endif %}
 
 {% assign total_mins = article.length
@@ -15,7 +15,8 @@
 {% assign hours = total_mins | divided_by: 60 %}
 {% assign mins = total_mins | modulo: 60 %}
 
-{% assign return = "阅读约" %}
+{% assign return = article.length
+  | append: "字，阅读约" %}
 
 {% if hours > 0 %}
   {% assign unit = "小时" %}
