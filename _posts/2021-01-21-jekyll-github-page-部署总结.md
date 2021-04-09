@@ -16,7 +16,7 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 
 ### 建立Github Page仓库
 
-创建githubpage的流程官方文档说的很清楚了：https://pages.github.com/
+创建githubpage的流程 [官方文档](https://pages.github.com/) 说的很清楚了：
 
 假设你的github用户名为username，你只需要建立一个名为username.github.io的仓库，并创建一个`index.html`文件便可拥有一个最基础的githubpage（仓库建立后会包含一个名为github-pages的action，有推送时会自动更新站点），接下来可以选择jekyll或hexo等框架来构建博客站点，他们的原理大同小异，最终都会编译成纯静态的网站（所有github-page有更好的seo）。
 
@@ -86,7 +86,6 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 <script>
   function setRandomBgImage(selector, seed) {
     let finalSeed = '';
-
     if (seed) {
       finalSeed = seed;
     } else {
@@ -97,23 +96,21 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
         finalSeed += STRING_POOL[index];
       }
     }
-
     var pattern = GeoPattern.generate(finalSeed);
     var element = document.querySelector(selector);
     if (element) {
       element.style.backgroundImage = pattern.toDataUrl();
     }
   }
-
   setRandomBgImage('{{ selector }}', '{{ seed }}');
 </script>
 
 // 使用，传入banner容器的id引入即可
 <body>
     <div id="page-banner-img"></div>
-    ...
+    <!--something-->
     {%- include extensions/geopattern.html selector="#page-banner-img" -%}
-    ...
+    <!--something-->
 </body>
 ```
 
