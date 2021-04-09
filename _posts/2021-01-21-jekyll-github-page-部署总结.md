@@ -58,13 +58,7 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 
 // 使用
 <div class="post-comments">
-    {%- if page.comments != false -%}
-
-    {%- if site.gitment.username -%}
-    {%- include extensions/comments/gitment.html -%}
-    {%- endif -%}
-
-    {%- endif -%}
+    <!--通过jekyll的include引入上述文件，并提供相应的参数-->
 </div>
 ```
 
@@ -74,18 +68,12 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
 
 ```html
 // geopattern.html
-{% if include.selector %}
-  {% assign selector = include.selector %}
-{% endif %}
-
-{% if include.seed %}
-  {% assign seed = include.seed %}
-{% endif %}
-
 <script src="/assets/js/geopattern.min.js"></script>
 <script>
+  // seed和selector参数通过jekyll include传递
   function setRandomBgImage(selector, seed) {
     let finalSeed = '';
+    
     if (seed) {
       finalSeed = seed;
     } else {
@@ -105,11 +93,11 @@ tags: 前端 jekyll github-page 静态网站 心得随笔
   setRandomBgImage('{{ selector }}', '{{ seed }}');
 </script>
 
-// 使用，传入banner容器的id引入即可
+// 使用
 <body>
     <div id="page-banner-img"></div>
     <!--something-->
-    {%- include extensions/geopattern.html selector="#page-banner-img" -%}
+    <!--使用jeykll 上面的geopattern.html selector传入banner容器的id引入即可-->
     <!--something-->
 </body>
 ```

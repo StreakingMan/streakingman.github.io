@@ -12,8 +12,7 @@
     <li>
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
 
-      {% assign article = post.content %}
-      {%- include functions.html func='get_reading_time' article=page.content -%}
+      {%- include functions.html func='get_reading_time' article=post.content -%}
       {% assign reading_time = return %}
 
       <h2 class="post-title">
