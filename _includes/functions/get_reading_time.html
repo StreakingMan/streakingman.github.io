@@ -1,21 +1,21 @@
 {% if include.params.article %}
-  {% assign article = include.params.article %}
+  {% assign articleWords = include.params.article | strip_html | strip_newlines | size %}
 {% endif %}
 
 {% if include.params.speed %}
   {% assign speed = include.params.speed %}
 {% else %}
-  {% assign speed = 300 %}
+  {% assign speed = 350 %}
 {% endif %}
 
-{% assign total_mins = article.length
+{% assign total_mins = articleWords
   | divided_by: speed
   | at_least: 1 %}
 
 {% assign hours = total_mins | divided_by: 60 %}
 {% assign mins = total_mins | modulo: 60 %}
 
-{% assign return = article.length
+{% assign return = articleWords
   | append: "字，阅读约" %}
 
 {% if hours > 0 %}
