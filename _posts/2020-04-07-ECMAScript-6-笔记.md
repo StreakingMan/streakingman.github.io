@@ -44,7 +44,7 @@ tags: ES6 心得随笔
   * `getOwnPropertyDescriptor(target, propKey)`
   * `defineProperty(target, propKey, propDesc)`
   * `preventExtensions(target)`
-    - 只可对未阻止拓展过的目标对象进项拦截更改
+    - 只可对未阻止拓展过的目标对象进行拦截更改
   * `getPrototypeOf(target)`
   * `isExtensible(target)`
   * `setPrototypeOf(target, proto)`
