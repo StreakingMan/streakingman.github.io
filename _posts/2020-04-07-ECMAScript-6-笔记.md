@@ -18,6 +18,7 @@ tags: ES6 心得随笔
   | 变量提升 | √ | - | - |
   | 相同作用域内重复声明 | 允许 | 不允许 | 不允许 |
   | 在全局作用域下声明时是否属于顶层对象属性| 是 | 否 | 否 |
+  | 初始化 | 默认初始化为undefined | 必须初始化 | 默认初始化为undefined |
 
 * const
   - 声明只读常量
@@ -41,12 +42,14 @@ tags: ES6 心得随笔
     | 浏览器 | window self |
     | Web Worker | self |
     | Node | global |
-     
+    
   - var和function声明的全局变量属于顶层变量的属性
 
   - ES2020新增globalThis用以在不同的环境中获取顶层对象
 
 ### 解构赋值
+
+
 
 ### Proxy
 
