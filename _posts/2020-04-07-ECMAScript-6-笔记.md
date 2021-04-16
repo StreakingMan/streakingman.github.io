@@ -49,7 +49,58 @@ tags: ECMScript
 
 ### 解构赋值
 
+* 左右两边“模式匹配”的情况下，左边变量会被赋予对应的值
 
+* 解构可用于数组（具备Iterator接口的结构）和变量
+
+* 只可对可遍历的结构（具备Iterator接口的结构，如数组、Set、Generator函数）进行数组形式的解构赋值
+
+* 解构不成功时，且没有默认值时会被赋值为undefined
+
+* 只有当某个结构位置的值全等与undefined时，默认值才会生效
+
+  ```javascript
+  let [x = 1] = [undefined];
+  x // 1
+
+  let [x = 1] = [null];
+  x // null
+  ```
+  
+* 默认值为表达式时会采用惰性求值的方式
+
+* 默认值可应用已经声明的变量
+  ```javascript
+  let [x = 1, y = x] = [];     // x=1; y=1
+  let [x = 1, y = x] = [2];    // x=2; y=2
+  let [x = 1, y = x] = [1, 2]; // x=1; y=2
+  let [x = y, y = 1] = [];     // ReferenceError: y is not defined
+  ```
+
+* 对象的解构左侧的表达分为模式和变量，解构对象时内部会先找到跟模式同名的属性，然后赋值给对应的变量
+  当模式和变量名相同时可以简写
+  ```javascript
+  //let { foo: foo, bar: bar } = { foo: 'aaa', bar: 'bbb' };
+  let { foo, bar } = { foo: 'aaa', bar: 'bbb' };
+  ```
+  
+* 对象的解构赋值可取到原型对象的属性
+
+* 解构嵌套对象时，子对象所在的父属性不存在时将会报错。若需要同时解构父属性和其子对象内的属性，需要声明不同的模式
+  ```javascript
+  const node = {
+    loc: {
+      start: {
+        line: 1,
+        column: 5
+      }
+    }
+  };
+  
+  let { loc, loc: { start }, loc: { start: { line }} } = node;
+  ```
+  
+* 字符串解构时会被转化为类数组对象
 
 ### Proxy
 
