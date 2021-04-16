@@ -3,8 +3,8 @@ layout: post
 title: 自定义element-ui表格展开折叠交互的特殊姿势
 subheading: element-ui骚操作
 author: Max
-categories: 前端
-tags: 前端 vue element-ui table
+categories: 工作总结
+tags: 前端 vue element-ui 表格
 ---
 
 ### 背景

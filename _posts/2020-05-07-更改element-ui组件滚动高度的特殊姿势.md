@@ -2,9 +2,9 @@
 layout: post
 title: 更改element-ui组件滚动高度的特殊姿势
 subheading: element-ui骚操作
-author: StreakingMan
-categories: 前端
-tags: 前端 vue element-ui scrollbar
+author: Max
+categories: 工作总结
+tags: 前端 vue element-ui 可编辑下拉框
 ---
 
 ### 背景

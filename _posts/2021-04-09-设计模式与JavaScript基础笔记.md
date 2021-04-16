@@ -2,8 +2,8 @@
 layout: post
 title: 设计模式与JavaScript基础笔记
 author: Max
-categories: 笔记
-tags: 软件工程 JavaScript
+categories: 学习笔记
+tags: 软件工程 设计模式 JavaScript
 ---
 
 > 本文主要为设计模式与JavaScript下实现的相关笔记，时常更新

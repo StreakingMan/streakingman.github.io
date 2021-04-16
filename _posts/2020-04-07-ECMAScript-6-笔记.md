@@ -2,8 +2,8 @@
 layout: post
 title: ECMAScript 6 笔记
 author: Max
-categories: 笔记 
-tags: ES6 心得随笔
+categories: 学习笔记 
+tags: ECMScript
 ---
 
 > 本文主要为阮一峰[《ECMAScript 6 入门》](https://es6.ruanyifeng.com/#docs)读书笔记以及相关思考，时常更新

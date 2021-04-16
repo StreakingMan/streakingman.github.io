@@ -2,8 +2,8 @@
 layout: post
 title: Jekyll Github Page部署总结
 author: Max
-categories: 前端
-tags: 前端 jekyll github-page 静态网站 心得随笔
+categories: 心得随笔
+tags: 前端 jekyll github-page 静态网站
 ---
 
 很久之前就想着要搭建博客，但都因为各种原因不了了之，时间一长，技术飞速迭代，脑子很难记下所有的东西，于是下定决心将工作学习中的点滴记录沉淀下来。
