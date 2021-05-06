@@ -113,7 +113,10 @@ tags: ECMScript
   const proxy = new Proxy(target, handler);    
   ```
   
+* Proxy的prototype为 `undefine` ，故不可用 `instanceof` 操作符检测类型
+  
 * 仅可对Object做代理，不支持基础类型
+  
   ```javascript
   const proxy = new Proxy(0, {})
   // Uncaught TypeError: Cannot create proxy with a non-object as target or handler
