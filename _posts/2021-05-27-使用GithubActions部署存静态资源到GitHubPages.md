@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用GithubActions部署存静态资源（如vue项目）到GitHubPages
+title: 使用GithubActions部署存静态资源到GitHubPages
 author: Max
 categories: 学习笔记
 tags:github-page github-action workflow 静态网站
