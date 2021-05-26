@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 使用GithubActions部署到GitHubPages
+title: 使用GithubActions部署静态资源（vue）到GitHubPages
 author: Max
 categories: 学习笔记
-tags:github-page github-action workflow 静态网站
+tags: github-page github-action workflow 静态网站
 ---
 
 > Github支持给项目设置secret，在workflow中可直接使用， 通过action可以很方便将一些纯静态资源部署到GitHub Pages中，如vue项目，而非Jekyll。
