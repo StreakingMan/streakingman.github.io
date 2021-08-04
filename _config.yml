@@ -56,7 +56,7 @@ yat:
 google_analytics: G-3F9TE1DGZD
 
 # 百度统计
-baidu_analytics: true
+baidu_analytics: 26ec48f61b6316f4d277bacd3aef2106
 
 # If you want to generate website sitemap, you can set true
 sitemap: true
