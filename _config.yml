@@ -29,8 +29,7 @@ email: z_max_y@163.com
 author: StreakingMan
 copyright: Copyright © 2020-2021
 description: >- # this means to ignore newlines until "baseurl:"
-  裸奔狂甩丁丁StreakingMan的博客，记录各种花里胡哨的东西（前端、游戏设计、创意、随笔）。
-  StreakingMan-Max-s github page blog about all kinds of awesome things, includes fed coding, game design, idea and so on.
+  StreakingMan（裸奔狂甩丁丁）的博客，沉淀知识，随便总结，记录各种炫酷和花里胡哨的东西。
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
