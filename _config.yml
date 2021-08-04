@@ -55,6 +55,9 @@ yat:
 # Google analytics
 # google_analytics: [Tracking ID]
 
+# 百度统计
+baidu_analytics: true
+
 # If you want to generate website sitemap, you can set true
 sitemap: true
 
