@@ -5,21 +5,26 @@
     <div class="site-footer-inner">
       <div>
         {{ site.copyright }} {% if site.author %}@{{ site.author | escape }}{% endif %}
-        <a href="{{ site.links.github }}" target="_blank">
+        <a href="{{ site.links.github }}" target="_blank" rel="nofollow noopener noreferrer">
           <i class="fa fa-github" style="font-size: 24px;margin:0 8px"></i>
-        </a>
-        <a href="{{ site.links.bilibili }}" target="_blank">
-          <img src="https://media-bed.streakingman.com/bilibili-logo.png" alt="bilibili" style="vertical-align: text-bottom"/>
         </a>
       </div>
       <div>
         本站总访问量<span id="busuanzi_value_site_pv"></span>次，
         访客数<span id="busuanzi_value_site_uv"></span>人次，
-        统计由<a href="//busuanzi.ibruce.info/">不蒜子</a>驱动。
+        统计由<a href="//busuanzi.ibruce.info/" rel="nofollow noopener noreferrer">不蒜子</a>驱动。
       </div>
-      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div>
+        Powered by
+        <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/" rel="nofollow noopener noreferrer"v>
+          Jekyll
+        </a>
+        &amp;
+        <a title="Yat, yet another theme." href="https://github.com/jeffreytse/jekyll-theme-yat" rel="nofollow noopener noreferrer">
+          Yat Theme
+        </a>
+        .
+      </div>
       <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
     </div>
   </div>
