@@ -58,7 +58,7 @@ sidebar:
 
     {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
     {%- if result.size == 0 -%}
-    <div class="post-comments">
+    <div class="post-comments utterances utterances-frame">
       {%- if page.comments != false -%}
 
       {%- if site.disqus.shortname -%}
@@ -67,6 +67,10 @@ sidebar:
 
       {%- if site.gitment.username -%}
       {%- include extensions/gitment.html -%}
+      {%- endif -%}
+
+      {%- if site.utterances -%}
+      {%- include extensions/utterances.html -%}
       {%- endif -%}
 
       {%- endif -%}

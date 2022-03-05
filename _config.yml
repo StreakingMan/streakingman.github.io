@@ -131,12 +131,19 @@ defaults:
 #   shortname: "Your Disqus username"
 
 # Gitment comments
-gitment:
-  username: "StreakingMan"
-  repo: "streakingman.github.io"
-  client_id: "0f6ccb61614db36eb8e3"
-  client_secret: "e4e8de79bceda034bb3528aa49ce5788c1dc5926"
-  redirect_uri: "http://blog.streakingman.com/"   # If you use a custom domain name
+# gitment:
+#  username: "StreakingMan"
+#  repo: "streakingman.github.io"
+#  client_id: "0f6ccb61614db36eb8e3"
+#  client_secret: "e4e8de79bceda034bb3528aa49ce5788c1dc5926"
+#  redirect_uri: "http://blog.streakingman.com/"   # If you use a custom domain name
+
+# Utterances comments
+utterances:
+  repo: "https://github.com/StreakingMan/streakingman.github.io"
+  issue_term: "title"
+  label: "utterances comment"
+  theme: "github-light"
 
 # Build settings
 # highlighter: none
