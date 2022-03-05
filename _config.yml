@@ -140,7 +140,7 @@ defaults:
 
 # Utterances comments
 utterances:
-  repo: "https://github.com/StreakingMan/streakingman.github.io"
+  repo: "streakingman.github.io"
   issue_term: "title"
   label: "utterances comment"
   theme: "github-light"
