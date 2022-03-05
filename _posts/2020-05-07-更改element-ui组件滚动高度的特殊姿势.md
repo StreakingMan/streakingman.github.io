@@ -15,11 +15,11 @@ tags: 前端 vue element-ui 可编辑下拉框
 
 ![](http://media-bed.streakingman.com/blog-img/%E5%8F%AF%E7%BC%96%E8%BE%91%E4%B8%8B%E6%8B%89%E6%A1%86.png)
 
-在点击添加学历时，在列表末尾追加一个输入框，同时将select滚动到底部，坑爹的是elment-ui并没有直接的方法操作滚动高度
+在点击添加学历时，在列表末尾追加一个输入框，同时将select滚动到底部，坑爹的是element-ui并没有直接的方法操作滚动高度
 
 ### scrollbar组件
 
-elment-ui中，滚动条是额外实现的，带了滚动条的组件都会引入scrollbar，但scrollbar组件并没有暴露出来
+element-ui中，滚动条是额外实现的，带了滚动条的组件都会引入scrollbar，但scrollbar组件并没有暴露出来
 
 ![](http://media-bed.streakingman.com/blog-img/element-scrollbar.png)
 
