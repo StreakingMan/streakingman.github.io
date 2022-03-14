@@ -1,9 +1,11 @@
 <script src="/assets/js/simple-jekyll-search.min.js"></script>
 
-<script>
+<script type="module">
+  import {SEARCH} from '/search.js'
+
   var sjs = SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: '/search.json'
+    json: SEARCH
   })
 </script>
