@@ -12,13 +12,14 @@
     for (let mutation of mutationsList) {
       if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
         const curTheme = document.documentElement.getAttribute('data-theme')
-        if (document.querySelector('.utterances-frame')) {
+        const iframe = document.querySelector('.utterances-frame');
+        console.log(mutation)
+        if (iframe) {
           const commentTheme = curTheme === 'dark' ? 'github-dark' : 'github-light'
           const message = {
             type: 'set-theme',
             theme: commentTheme
           };
-          const iframe = document.querySelector('.utterances-frame');
           iframe.contentWindow.postMessage(message, 'https://utteranc.es');
         }
       }
