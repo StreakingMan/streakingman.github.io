@@ -8,19 +8,25 @@
 </script>
 
 <script>
+  const setUtterancesTheme = (dataTheme)=>{
+    const iframe = document.querySelector('iframe.utterances-frame');
+    if (iframe) {
+      const utterancesTheme = dataTheme === 'dark' ? 'github-dark' : 'github-light'
+      const message = {
+        type: 'set-theme',
+        theme: utterancesTheme
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+  }
+  // 初始化
+  setUtterancesTheme(document.documentElement.getAttribute('data-theme'))
+
+  // 动态监听
   const observer = new MutationObserver((mutationsList, observer) => {
     for (let mutation of mutationsList) {
       if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-        const curTheme = document.documentElement.getAttribute('data-theme')
-        const iframe = document.querySelector('iframe.utterances-frame');
-        if (iframe) {
-          const commentTheme = curTheme === 'dark' ? 'github-dark' : 'github-light'
-          const message = {
-            type: 'set-theme',
-            theme: commentTheme
-          };
-          iframe.contentWindow.postMessage(message, 'https://utteranc.es');
-        }
+        setUtterancesTheme(document.documentElement.getAttribute('data-theme'))
       }
     }
   });
