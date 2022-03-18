@@ -30,8 +30,10 @@
   });
   observer.observe(document.documentElement, {attributes: true, childList: false, subtree: false});
 
+  console.log(document.documentElement.getAttribute('data-theme'))
+
   // 初始化
   setTimeout(() => {
     setUtterancesTheme(document.documentElement.getAttribute('data-theme'))
-  }, 0)
+  }, 5000)
 </script>
