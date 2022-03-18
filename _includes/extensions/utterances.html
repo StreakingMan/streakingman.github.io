@@ -12,8 +12,7 @@
     for (let mutation of mutationsList) {
       if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
         const curTheme = document.documentElement.getAttribute('data-theme')
-        const iframe = document.querySelector('.utterances-frame');
-        console.log(mutation)
+        const iframe = document.querySelector('iframe.utterances-frame');
         if (iframe) {
           const commentTheme = curTheme === 'dark' ? 'github-dark' : 'github-light'
           const message = {
