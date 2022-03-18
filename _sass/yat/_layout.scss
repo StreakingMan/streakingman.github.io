@@ -482,7 +482,7 @@ html {
 .post-comments {
   padding-top: 25px;
   // customize utterances comment
-  &.utterances-frame{
+  .utterances-frame{
     position: relative;
   }
 }

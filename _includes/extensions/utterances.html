@@ -9,7 +9,7 @@
 
 <script>
   const setUtterancesTheme = (dataTheme) => {
-    const iframe = document.querySelector('iframe.utterances-frame');
+    const iframe = document.querySelector('.utterances-frame');
     if (iframe) {
       const utterancesTheme = dataTheme === 'dark' ? 'github-dark' : 'github-light'
       const message = {
