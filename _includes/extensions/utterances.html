@@ -4,10 +4,27 @@
         label="{{ site.utterances.label }}"
         repo="{{ site.utterances.repo }}"
         src="https://utteranc.es/client.js"
+        onload="test()"
         theme="{{ site.utterances.theme }}">
 </script>
 
 <script>
+  const test = () => {
+    console.log(document.querySelector('.utterances-frame'))
+    setTimeout(() => {
+      console.log(document.querySelector('.utterances-frame'))
+    })
+    setTimeout(() => {
+      console.log(1000,document.querySelector('.utterances-frame'))
+    },1000)
+    setTimeout(() => {
+      console.log(2000,document.querySelector('.utterances-frame'))
+    },2000)
+    setTimeout(() => {
+      console.log(3000,document.querySelector('.utterances-frame'))
+    },3000)
+  }
+
   const setUtterancesTheme = (dataTheme) => {
     const iframe = document.querySelector('.utterances-frame');
     if (iframe) {
