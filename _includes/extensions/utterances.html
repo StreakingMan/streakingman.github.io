@@ -5,7 +5,7 @@
         repo="{{ site.utterances.repo }}"
         src="https://utteranc.es/client.js"
         theme="{{ site.utterances.theme }}"
-      on="setUtterancesTheme()">
+        onload="setUtterancesTheme(document.documentElement.getAttribute('data-theme'))">
 </script>
 
 <script>
@@ -20,10 +20,6 @@
       iframe.contentWindow.postMessage(message, 'https://utteranc.es');
     }
   }
-  // 初始化
-  window.onload(()=>{
-    setUtterancesTheme(document.documentElement.getAttribute('data-theme'))
-  })
 
   // 动态监听
   const observer = new MutationObserver((mutationsList, observer) => {
