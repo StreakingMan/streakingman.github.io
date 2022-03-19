@@ -144,7 +144,7 @@ utterances:
   issue_term: "title"
   label: "utterances comment"
   theme: "github-light"
-  follow_site_theme: true
+  follow_site_theme: false
 
 # Build settings
 # highlighter: none
