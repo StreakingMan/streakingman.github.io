@@ -3,9 +3,15 @@
 <script type="module">
   import {SEARCH} from '/search.js'
 
-  var sjs = SimpleJekyllSearch({
+  SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: SEARCH
+    json: SEARCH,
+    searchResultTemplate: '<li><a href="{url}">{title}</a><br /><span>{tags}</span><br/><span>{content}</span></li>',
+    templateMiddleware: (prop, value, template) => {
+      if (prop === 'content') {
+        return value.substring(0, 50)
+      }
+    }
   })
 </script>
