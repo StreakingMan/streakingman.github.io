@@ -14,17 +14,15 @@
   opacity: 0;
   transform: translateY(10px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-
-  &.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-size: 36px;
+  user-select: none;
 
   @include media-query(1024px) {
     width: 48px;
     height: 48px;
     border-radius: 24px;
     right: 35px;
+    font-size: 24px;
   }
 
   @include media-query($on-palm) {
@@ -32,7 +30,13 @@
     height: 36px;
     border-radius: 18px;
     right: 20px;
+    font-size: 18px;
   }
+}
+
+.click-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 html[data-theme="dark"] {
