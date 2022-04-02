@@ -1,0 +1,42 @@
+.click-to-top {
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  right: 60px;
+  bottom: 24px;
+  background: white;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @include media-query(1024px) {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    right: 35px;
+  }
+
+  @include media-query($on-palm) {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    right: 20px;
+  }
+}
+
+html[data-theme="dark"] {
+  .click-to-top {
+    background: #34323D;
+  }
+}
