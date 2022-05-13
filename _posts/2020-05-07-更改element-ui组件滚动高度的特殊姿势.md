@@ -4,7 +4,7 @@ title: 更改element-ui组件滚动高度的特殊姿势
 subheading: element-ui骚操作
 author: Max
 categories: 工作总结
-tags: 前端 vue element-ui 可编辑下拉框
+tags: vue element-ui 可编辑下拉框
 ---
 
 ### 背景
