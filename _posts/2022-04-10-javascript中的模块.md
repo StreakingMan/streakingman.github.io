@@ -1,5 +1,9 @@
 ---
-layout: post title: JavaScript中的模块 author: Max categories: JavaScript tags: 软件工程 模块化
+layout: post 
+title: JavaScript中的模块 
+author: Max 
+categories: JavaScript 
+tags: 软件工程 模块化
 ---      
 
 前端模块化是一个老生常谈的问题，从早期的IIFE到CommonJS，后续为了解决异步加载的AMD， 再后续为了统一而出现的UMD，再到如今的ESM...模块化方案一直再不断的演进和完善。
