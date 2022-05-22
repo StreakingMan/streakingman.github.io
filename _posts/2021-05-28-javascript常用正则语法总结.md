@@ -2,8 +2,8 @@
 layout: post
 title: JavaScript常用正则语法总结
 author: Max
-categories: 学习笔记
-tags: JavaScript 正则
+categories: JavaScript
+tags: 正则
 ---
 
 ### 常用语法
