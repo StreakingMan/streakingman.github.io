@@ -22,7 +22,7 @@ const arr = [1, 2, 3];
 console.log(arr[Symbol.iterator]); // f values() {[native code]}
 ```
 
-以上这些都称为可迭代对象，以下这些行为能有消费可迭代对象
+以上这些都称为可迭代对象，以下这些行为能消费可迭代对象
 
 - `for-of`
 - `[...arr]` `const [a,b,c] = arr`
@@ -82,7 +82,7 @@ for (let pet of petsHome) {
 
 生成器本质是一个函数，除了箭头函数外，其他任何方式定义的函数，在函数名称前加一个`*`号，
 都能将变成一个生成器。调用生成器函数会产生一个`生成器对象`，并且这个对象实现了`Iterator`接口，
-具有`next()`方法（它返回对象的`value`就是生成器函数的返回值），生成器对象有状态的概念`类似Promise`，
+具有`next()`方法（它返回对象的`value`就是生成器函数的返回值），生成器对象有状态的概念（类似 Promise），
 初始状态为`suspend`，通过`yield`关键字可以让生成器停止执行，调用`next()`回复恢复执行
 
 ```javascript
@@ -98,7 +98,7 @@ for (let s of spellHello()) {
 }
 ```
 
-`yield`关键字时生成器的精髓所在，它只能在生成器的内部使用，它的返回值作为每次调用`next()`的`value`，
+`yield`关键字是生成器的精髓所在，它只能在生成器的内部使用，它的返回值作为每次调用`next()`的`value`，
 同时还可以`yield*`操作可迭代对象，增强生成器行为
 
 ```javascript
