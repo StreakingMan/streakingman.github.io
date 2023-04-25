@@ -8,11 +8,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "docs:dev": "vitepress dev _posts",
-    "docs:build": "vitepress build _posts",
-    "docs:serve": "vitepress serve _posts"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.4"
+    "vitepress": "^1.0.0-alpha.74",
+    "vue": "^3.2.47"
   }
 }
