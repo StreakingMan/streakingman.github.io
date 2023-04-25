@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Smiley;
+  src: url("../fonts/SmileySans-Oblique.otf") format("opentype"),
+    url("../fonts/SmileySans-Oblique.ttf") format("truetype"),
+    url("../fonts/SmileySans-Oblique.ttf.woff2") format("woff2"),
+    url("../fonts/SmileySans-Oblique.otf.woff2") format("woff2");
+}
